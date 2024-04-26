@@ -32,3 +32,5 @@ The general RAG scheme is as follows:
 First we need to transform PDF files. 
 
 
+
+
