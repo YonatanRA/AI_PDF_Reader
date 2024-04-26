@@ -43,5 +43,7 @@ Embedding models are a type of machine learning approach used to convert raw dat
 With the database created, we can use our query to search the relevant chunks, using both, query and chunks as context, as input to the LLM to obtain the best possible response.
 
 
+### Technologies used
 
-
++ [LangChain](https://www.langchain.com/)
++ [OpenAI GPT4](https://openai.com/)
