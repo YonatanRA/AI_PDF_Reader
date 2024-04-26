@@ -7,13 +7,13 @@ RAG is the process of optimizing a large language model (LLM) so that it utilize
 
 A RAG offers several direct benefits in the development of an artificial intelligence tool:
 
-+ Cost-effectiveness of implementation. AI development typically begins with a basic model. Foundational Models (FMs) are API-accessible LLMs trained on a broad spectrum of generalized and unlabeled data. The computational and financial costs of retraining FMs to include specific organizational or domain-specific information are very high. A RAG is a more cost-effective approach to introducing new data into the LLM.
++ **Cost-effectiveness of implementation**. AI development typically begins with a basic model. Foundational Models (FMs) are API-accessible LLMs trained on a broad spectrum of generalized and unlabeled data. The computational and financial costs of retraining FMs to include specific organizational or domain-specific information are very high. A RAG is a more cost-effective approach to introducing new data into the LLM.
 
-+ Updated information. Even if the LLM is trained with data that suits a company's needs, maintaining the model's relevance is challenging. A RAG allows developers to provide the latest research, statistics, or news to generative models. A RAG can be used to connect the LLM directly to live social media feeds, news sites, or other frequently updated information sources. This way, an LLM can offer the most up-to-date information.
++ **Updated information**. Even if the LLM is trained with data that suits a company's needs, maintaining the model's relevance is challenging. A RAG allows developers to provide the latest research, statistics, or news to generative models. A RAG can be used to connect the LLM directly to live social media feeds, news sites, or other frequently updated information sources. This way, an LLM can offer the most up-to-date information.
 
-+ Trust. By feeding the LLM its own data, the data source is well-known, and it avoids the LLM's hallucination.
++ **Trust**. By feeding the LLM its own data, the data source is well-known, and it avoids the LLM's hallucination.
 
-+ Greater control. RAG enables AI developers to switch information sources to adapt to changing requirements or the company's multiple uses. They can also restrict the retrieval of sensitive information to different levels of authorization and ensure that the LLM generates appropriate responses.
++ **Greater control**. RAG enables AI developers to switch information sources to adapt to changing requirements or the company's multiple uses. They can also restrict the retrieval of sensitive information to different levels of authorization and ensure that the LLM generates appropriate responses.
 
 The general RAG scheme is as follows:
 
