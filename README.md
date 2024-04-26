@@ -40,7 +40,7 @@ First, we need to transform the PDFs. Since the context of an LLM is limited in 
 
 Embedding models are a type of machine learning approach used to convert raw data, such as text, into a numerical form where similar items are represented by points that are close to each other in a high-dimensional space. Basically, embedding models transform text into numerical vectors. We must remember that machines do not understand words, only numbers. Once we have the vectors, we create the vector database.
 
-With the database created, we can use our query to search the relevant chunks, using both, query and chunks as context, as input to LLM. 
+With the database created, we can use our query to search the relevant chunks, using both, query and chunks as context, as input to the LLM to obtain the best possible response.
 
 
 
