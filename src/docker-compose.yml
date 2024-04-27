@@ -1,7 +1,0 @@
-version: '2'
-services:
-    build: .
-    ports:
-      - 5010:5010
-    volumes:
-      - ./:/usr/src:cached
