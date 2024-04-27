@@ -85,5 +85,5 @@ def get_response() -> str:
     return chain.invoke(query)
 
 
-if __name__=='__main__':
+if __name__=="__main__":
     logger.info(f"Chat Response: {get_response()}")
