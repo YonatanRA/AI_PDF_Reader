@@ -54,7 +54,7 @@ With the database created, we can use our query to search the relevant chunks, u
 
 ### How to use this repo
 
-First, we need to store the OpenAI API KEY in a .env file to load it with the dotenv library and use it as an environment variable. In `notebooks` folder there is a jupyter notebook with a step by step explanation. In `src` folder there are the python codes for creating Chroma database and getting a chat response, besides requirements.txt file and Dockerfile. Use examples:
+First, we need to store the OpenAI API KEY in a `.env` file to load it with the dotenv library and use it as an environment variable. In `notebooks` folder there is a jupyter notebook with a step by step explanation. In `src` folder there are the python codes for creating Chroma database and getting a chat response, besides requirements.txt file and Dockerfile. Use examples:
 
 **Creating database**
 ```bash
