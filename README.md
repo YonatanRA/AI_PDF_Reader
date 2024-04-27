@@ -54,4 +54,14 @@ With the database created, we can use our query to search the relevant chunks, u
 
 ### How to use this repo
 
-In `notebooks` folder there is a jupyter notebook with a step by step explanation. In `src` folder 
+In `notebooks` folder there is a jupyter notebook with a step by step explanation. In `src` folder there are the python codes for creating Chroma database and getting a chat response. Examples:
+
+**Creating database**
+```bash
+python create_database.py
+```
+
+**Getting a response for a user query**
+```bash
+python chat.py -q "What are the main products?"
+```
