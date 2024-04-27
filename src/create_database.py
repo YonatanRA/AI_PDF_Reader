@@ -18,6 +18,10 @@ def create_db() -> None:
 
     """
     Function to create ChromaDB with embeddings.
+
+    Params: No input parameters.
+
+    Return: No return.
     """
 
     global OPENAI_API_KEY
