@@ -49,3 +49,4 @@ With the database created, we can use our query to search the relevant chunks, u
 
 + [LangChain](https://www.langchain.com/)
 + [OpenAI GPT4](https://openai.com/)
++ [Chroma](https://www.trychroma.com/)
