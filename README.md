@@ -1,7 +1,9 @@
 # AI PDF Reader
 
 
-This project focuses on data extraction from a PDF file with AI. Given a company's proprietary files, we want to have a quick query system from those files. A system similar to having a secretary. The technology we will use is called Retrieval Augmented Generation (RAG). 
+This project focuses on data extraction from a PDF file with AI. In this case, we will use the [2023 Apple's Form 10-K](https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-K-Q4-2023-As-Filed.pdf).
+
+Given a company's proprietary files, we want to have a quick query system from those files. A system similar to having a secretary. The technology we will use is called Retrieval Augmented Generation (RAG). 
 
 ### What is RAG?
 
