@@ -11,6 +11,8 @@ from tools import logger
 import os                          
 from dotenv import load_dotenv   
 
+
+
 # load API KEY
 load_dotenv()
 
@@ -28,7 +30,11 @@ query = parse_args.query
 def create_prompt() -> object:
 
     """
-    Function to create prompt template
+    Function to create prompt template.
+
+    Params: No input parameters.
+
+    Return: LangChain ChatPromptTemplate object.
     """
 
     template = """
@@ -49,8 +55,17 @@ def create_prompt() -> object:
 
 def get_response() -> str:
 
+    """
+    Function to create chatbot response.
+
+    Params: No input parameters.
+
+    Return: string response.
+    """
+
     global OPENAI_API_KEY, query
 
+    logger.info('Creating prompt template.')
     prompt = create_prompt()
 
     model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-4-turbo")
@@ -69,4 +84,4 @@ def get_response() -> str:
 
 
 if __name__=='__main__':
-    get_response()
+    print(get_response())
