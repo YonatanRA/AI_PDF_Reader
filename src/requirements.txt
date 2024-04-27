@@ -3,3 +3,4 @@ pip install langchain-openai
 pip install langchain-chroma
 pip install chromadb
 pip install pypdf
+
