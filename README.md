@@ -1,7 +1,7 @@
 # AI PDF Reader
 
 
-This project focuses on data extraction from a PDF file with AI. In this case, we will use the [2023 Apple's Form 10-K](https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-K-Q4-2023-As-Filed.pdf).
+This project focuses on data extraction from a PDF file with AI. In this case, we will use the [2023 Apple's Form 10-K](https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-K-Q4-2023-As-Filed.pdf). A 10-K is a comprehensive report filed annually by a publicly-traded company about its financial performance and is required by the U.S. Securities and Exchange Commission (SEC). The report contains much more detail than a company's annual report, which is sent to its shareholders before an annual meeting to elect company directors.
 
 Given a company's proprietary files, we want to have a quick query system from those files. A system similar to having a secretary. The technology we will use is called Retrieval Augmented Generation (RAG). 
 
