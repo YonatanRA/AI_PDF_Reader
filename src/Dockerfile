@@ -10,4 +10,4 @@ RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
-CMD ["python" , "chat.py", "-q","(user-query)"]
+CMD ["python" , "chat.py", "-q", "(user-query)"]
