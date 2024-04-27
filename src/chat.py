@@ -20,8 +20,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 # query argparsing
-argparser = argparse.ArgumentParser(description='PDF Reader query')
-argparser.add_argument('-q', '--query', type=str, help='User query input')
+argparser = argparse.ArgumentParser(description="PDF Reader query")
+argparser.add_argument("-q", "--query", type=str, help="User query input")
 parse_args = argparser.parse_args()
 query = parse_args.query
 
@@ -65,23 +65,25 @@ def get_response() -> str:
 
     global OPENAI_API_KEY, query
 
-    logger.info('Creating prompt template.')
+    logger.info("Creating prompt template.")
     prompt = create_prompt()
+    logger.info("Prompt template created.")
 
+    logger.info("Loading GPT and Embedding model.")
     model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-4-turbo")
-
     vectorizer = OpenAIEmbeddings()
 
+    logger.info("Getting relevant documents from ChromaDB.")
     chroma_db = Chroma(persist_directory="../chroma_db", embedding_function=vectorizer)
-    
-    retriever = chroma_db.as_retriever(search_type="mmr", search_kwargs={'k': 15, 'lambda_mult': 0.25})
+    retriever = chroma_db.as_retriever(search_type="mmr", search_kwargs={"k": 15, "lambda_mult": 0.25})
 
     parser = StrOutputParser()
     
+    logger.info("Executing chain.")
     chain = {"context": retriever, "question": RunnablePassthrough()} | prompt | model | parser
 
     return chain.invoke(query)
 
 
 if __name__=='__main__':
-    print(get_response())
+    logger.info(f"Chat Response: {get_response()}")
